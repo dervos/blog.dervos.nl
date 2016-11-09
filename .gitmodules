@@ -1,0 +1,3 @@
+[submodule "content/themes/solar-theme-ghost"]
+	path = content/themes/solar-theme-ghost
+	url = git@github.com:mattvh/solar-theme-ghost.git
