@@ -14,9 +14,13 @@ config = {
         url: 'https://dervos.nl',
         mail: {},
         database: {
-            client: 'sqlite3',
+            client: 'mysql',
             connection: {
-                filename: path.join(__dirname, '/content/data/ghost.db')
+                host     : process.env.DB_PORT,
+                user     : process.env.DB_USER,
+                password : process.env.DB_PASSWORD,
+                database : process.env.DB_NAME,
+                charset  : 'utf8'
             },
             debug: false
         },
